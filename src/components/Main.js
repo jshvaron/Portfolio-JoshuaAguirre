@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navigation/Navbar";
 import AboutMe from "./About";
 import Portfolio from "./Portfolio";
+import Contact from "./contact";
 import '../index.css'
 
 function Main() {
@@ -14,6 +15,7 @@ function Main() {
             <body>
                 <AboutMe />
                 <Portfolio />
+                <Contact />
             </body>
             <footer>
                 xFOOTERx

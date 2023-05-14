@@ -91,6 +91,35 @@ body {
 }
 
 
+/* CONTACT */
+.ContactContainer{
+  border: 1px solid black;
+  margin: 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Details{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DetailsHeader{
+  border: 1px solid black;
+  margin: 5px;
+}
+.Message{
+  border: 1px solid black;
+  margin: 5px;
+}
+.MessageHeader{
+  border: 1px solid black;
+  margin: 5px;
+}
+
 
 
 
