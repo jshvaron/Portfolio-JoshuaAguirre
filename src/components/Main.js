@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from "./Navigation/Navbar";
+import AboutMe from "./About";
 import '../index.css'
 
 function Main() {
@@ -6,13 +8,13 @@ function Main() {
     return (
         <>
             <header>
-                Hello World
+                <Navbar />
             </header>
             <body>
-                X
+                <AboutMe />
             </body>
             <footer>
-                x
+                xFOOTERx
             </footer>
         </>
 

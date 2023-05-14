@@ -1,3 +1,4 @@
+/* Layer 1 */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +6,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
+
+
+/* Layer 2 */
+.App{
+  height: 100vh;
+}
+
+
+/* Layer 3 */
+/* navbar */
+.Navigation{
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 5px;
+
+}
+.NavLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavLink{
+  border: 1px solid black;
+  margin: 5px;
+}
+
+
+/* ABOUTME */
+.AboutMeContainer{
+  border: 1px solid black;
+  margin: 5px;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Snapshot{
+  border: 1px solid black;
+  margin: 5px;
+}
+ .ProfilePic{
+  border: 1px solid black;
+  margin: 5px;
+}
+.ProfilePicCap{
+  border: 1px solid black;
+  margin: 5px;
+}
+.BioContainer{
+  border: 1px solid black;
+  margin: 5px;
+}
+.Bio{
+  border: 1px solid black;
+  margin: 5px;
+}
+
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
