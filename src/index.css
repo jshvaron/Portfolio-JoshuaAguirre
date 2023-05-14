@@ -68,6 +68,29 @@ body {
 }
 
 
+/* PORTFOLIO */
+.PortfolioPage{
+  border: 1px solid black;
+  margin: 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PortfolioContainer{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Projects{
+  border: 1px solid black;
+  margin: 5px;
+  
+}
+
+
 
 
 

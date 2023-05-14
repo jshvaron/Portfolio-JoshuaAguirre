@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navigation/Navbar";
 import AboutMe from "./About";
+import Portfolio from "./Portfolio";
 import '../index.css'
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
             </header>
             <body>
                 <AboutMe />
+                <Portfolio />
             </body>
             <footer>
                 xFOOTERx
