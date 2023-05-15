@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 function Portfolio(){
-
+    
+    
     return (
         <>
             <div className="PortfolioPage">

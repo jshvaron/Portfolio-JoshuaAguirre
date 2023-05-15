@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "./Navigation/Navbar";
 
 function AboutMe(){ 
     
     return(
-        <>
+        <>  
+            <Navbar />
             <div className="AboutMeContainer">
+                
                 <div className="Snapshot">
                     <figure className="ProfilePic">
                         PICTURE

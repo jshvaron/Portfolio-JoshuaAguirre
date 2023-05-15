@@ -1,12 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+  --stormy: #141414e8;
+
+}
+
 /* Layer 1 */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+   background-color: rgba(165, 164, 164, 0.145);
 }
 
 
@@ -22,9 +29,8 @@ body {
   display: flex;
   justify-content:  space-around;
   align-items: center;
-  border: 1px solid black;
   margin: 5px;
-
+  color: var(--stormy)
 }
 .NavLinks{
   display: flex;
@@ -32,8 +38,19 @@ body {
   align-items: center;
 }
 .NavLink{
-  border: 1px solid black;
   margin: 5px;
+  color: var(--stormy);
+  padding: 5px;
+}
+.NavLink:hover{
+  background-color: var(--stormy);
+  color: whitesmoke;
+  border-radius: 4px;
+  padding: 5px;
+  transition: .5s;
+}
+.NavLink:active{
+
 }
 
 
@@ -41,7 +58,7 @@ body {
 .AboutMeContainer{
   border: 1px solid black;
   margin: 5px;
-  height: 93vh;
+  height: 77vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,10 +66,12 @@ body {
 .Snapshot{
   border: 1px solid black;
   margin: 5px;
+  background-color: rgb(255, 255, 255);
 }
  .ProfilePic{
   border: 1px solid black;
   margin: 5px;
+  
 }
 .ProfilePicCap{
   border: 1px solid black;
@@ -121,7 +140,47 @@ body {
 }
 
 
+/* RESUME */
+.ResumeContainer{
+  border: 1px solid black;
+  margin: 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ResumeHeader{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ResumeContent{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ResumeDetails{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* FOOTER */
+.Footer{
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
