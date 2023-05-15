@@ -11,14 +11,9 @@ function Main() {
 
     return (
         <>
-
             <section>
                 <AboutMe />
-                <footer>
-                <Footer />
-                </footer>
             </section>
-
         </>
 
     )

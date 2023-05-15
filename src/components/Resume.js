@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "./Navigation/Navbar";
+import Footer from "./Navigation/Footer";
 
 function Resume(){
 
     return(
         <>
-         <div className="ResumeContainer">
+        <Navbar />
+        <div className="ResumeContainer">
             <h1 className="ResumeHeader">
                 Resume
             </h1>
@@ -19,6 +22,7 @@ function Resume(){
                 <p className="ResumeDetails">Stuff</p>
             </section>
          </div>
+         <Footer />
         </>
     )
 }

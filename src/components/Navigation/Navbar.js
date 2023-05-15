@@ -7,20 +7,26 @@ function Navbar() {
     function handleAbout() {
         navigate('/About')
     }
-    // function handlePortfolio() {
-    //     Navigate('/About')
-    // }
+    function handlePortfolio() {
+        navigate('/Portfolio')
+    }
+    function handleContact() {
+        navigate('/Contact')
+    }
+    function handleResume() {
+        navigate('/Resume')
+    }
     return (
         <>
             <nav className="Navigation">
-                <h1> 
+                <h2> 
                 xJoshua Aguirrex
-                </h1>
+                </h2>
                 <section className="NavLinks">
                     <p className="NavLink" onClick={()=> handleAbout()}>About</p>
-                    <p className="NavLink" on>Portfolio</p>
-                    <p className="NavLink">Contact</p>
-                    <p className="NavLink">Resume</p>
+                    <p className="NavLink" onClick={()=> handlePortfolio()}>Portfolio</p>
+                    <p className="NavLink" onClick={()=> handleContact()}>Contact</p>
+                    <p className="NavLink" onClick={()=> handleResume()}>Resume</p>
                 </section>
             </nav>
         </>
