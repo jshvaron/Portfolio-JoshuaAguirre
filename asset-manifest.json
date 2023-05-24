@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-joshua-aguirre/static/css/main.d1492c65.css",
+    "main.js": "/portfolio-joshua-aguirre/static/js/main.aa44bcf3.js",
+    "static/js/787.694f4db3.chunk.js": "/portfolio-joshua-aguirre/static/js/787.694f4db3.chunk.js",
+    "static/media/IMG_1843.jpeg": "/portfolio-joshua-aguirre/static/media/IMG_1843.9702d01fe065a84f7335.jpeg",
+    "static/media/rainOrShine.png": "/portfolio-joshua-aguirre/static/media/rainOrShine.4c0ed83a66235cd5274e.png",
+    "static/media/gitjobs.png": "/portfolio-joshua-aguirre/static/media/gitjobs.77a4fa24a3fc170770b0.png",
+    "static/media/gen.png": "/portfolio-joshua-aguirre/static/media/gen.e92df0f5d34f684befcb.png",
+    "static/media/emp.png": "/portfolio-joshua-aguirre/static/media/emp.d54ffb0dbeb1bf4f1f94.png",
+    "static/media/schedule.png": "/portfolio-joshua-aguirre/static/media/schedule.901ddabf0ea7aa5e9318.png",
+    "static/media/notetaker.png": "/portfolio-joshua-aguirre/static/media/notetaker.cfb3f7e277ec4f3e5e51.png",
+    "index.html": "/portfolio-joshua-aguirre/index.html",
+    "main.d1492c65.css.map": "/portfolio-joshua-aguirre/static/css/main.d1492c65.css.map",
+    "main.aa44bcf3.js.map": "/portfolio-joshua-aguirre/static/js/main.aa44bcf3.js.map",
+    "787.694f4db3.chunk.js.map": "/portfolio-joshua-aguirre/static/js/787.694f4db3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1492c65.css",
+    "static/js/main.aa44bcf3.js"
+  ]
+}
