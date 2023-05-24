@@ -3,7 +3,7 @@
 
 :root{
   --stormy: #141414df;
-
+  
 }
 
 /* Layer 1 */
@@ -12,7 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  height: 50vh;
    background-color: rgba(165, 164, 164, 0.145);
 }
 
@@ -29,7 +29,10 @@ body {
   display: flex;
   justify-content:  space-around;
   align-items: center;
-  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: var(--stormy)
 }
 .NavLinks{
@@ -40,7 +43,7 @@ body {
 .NavLink{
   margin: 5px;
   color: var(--stormy);
-  padding: 5px;
+  /* padding: 5px; */
 }
 .NavLink:hover{
   background-color: var(--stormy);
@@ -56,24 +59,66 @@ body {
 
 /* ABOUTME */
 .AboutMeContainer{
-  border: 1px solid black;
   margin: 5px;
-  height: 70vh;
+  height: 68vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (max-width: 890px) {
+  .AboutMeContainer{
+    margin: none;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+  }
+  .Snapshot{
+    border-radius: 60%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  1px 1px 12px 1px rgb(86, 86, 86);
+    margin: 60px 40px 20px;
+  }
+  .ProfilePic{
+    /* border: 1px solid black; */
+    margin: .001px;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  img{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 60%;
+  
+  }
+  .BioContainer{
+    /* border: 1px solid black; */
+    margin: 1px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  1px 1px 5px 1px rgb(86, 86, 86);
+    height: 30vh;
+    width: 250px;
+    font-size: .7rem;
+    display: flex;
+   justify-content: center;
+   padding: 10px;
+  }
 }
 .Snapshot{
   border-radius: 60%;
   background-color: rgb(255, 255, 255);
   box-shadow:  1px 1px 12px 1px rgb(86, 86, 86);
-
+  margin: 10%;
 }
  .ProfilePic{
   /* border: 1px solid black; */
   margin: .001px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
  img{
   width: 100% !important;
@@ -88,49 +133,237 @@ body {
 
 }
 .BioContainer{
-  border: 1px solid black;
-  margin: 5px;
+  /* border: 1px solid black; */
+  margin-left: 40px;
+  margin-right: 40px;
+
+  background-color: white;
+  border-radius: 20px;
+  box-shadow:  1px 1px 5px 1px rgb(86, 86, 86);
+  padding: 20px;
 
 }
 .Bio{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 5px;
   color: var(--stormy);
 
 
 }
 
-
-
 /* PORTFOLIO */
 .PortfolioPage{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 5px;
-  height: 70vh;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
 }
 .PortfolioContainer{
-  border: 1px solid black;
-  margin: 5px;
+  /* border: 1px solid black; */
+  margin: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 1fr;
+
+  height: 50vh;
+  width: 60vw;
+}
+@media screen and (max-width: 636px){
+  .PortfolioContainer{
+    height: 62.3vh;
+    width: 60vw;
+  }
+}
+
+.Project-1{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+  grid-column: span 2;
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 7px 2px rgb(86, 86, 86);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-image: url('./assets/pictures/gitjobs.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
 }
-.Projects{
-  border: 1px solid black;
-  margin: 5px;
-  color: var(--stormy)
+.layer {
+  background-color: var(--stormy);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: none;
+  border-radius: 18px;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+ .Project-1:hover, .Project-2:hover, .Project-3:hover, .Project-4:hover, .Project-5:hover, .Project-6:hover {
+  transform: scale(1.015);
+  transition: all .04s ease-in-out;
+}
+@media screen and (max-width: 636px){
+  .layer {
+    background-color: var(--stormy);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: none;
+    border-radius: 18px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+  }
+} 
+
+
+
+/* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.795); */
+
+
+.Project-2{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+
+
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 4px 1px rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 1rem;
+  background-image: url('./assets/pictures/rainOrShine.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+  position: relative;
 
 }
+.Project-3{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+  width:auto;
+
+
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 4px 1px rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-image: url('./assets/pictures/schedule.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+  position: relative;
+}
+.Project-4{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+  grid-column: span 2;
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 7px 2px rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-image: url('./assets/pictures/notetaker.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+}
+.Project-5{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+  grid-column: span 2;
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 7px 2px rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-image: url('./assets/pictures/emp.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+}
+.Project-6{
+  /* border: 1px solid black; */
+  height: auto;
+  width: auto;
+  margin: 2%;
+  width:auto;
+
+
+  color: var(--stormy);
+  border-radius: 20px;
+  box-shadow:  1px 1px 7px 2px rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-image: url('./assets/pictures/gen.png');
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+  position: relative;
+}
+.p-icon{
+  margin: 5px;
+
+}
+.p-icon:hover{
+  transform: scale(1.2);
+  transition: all .04s ease-in-out;
+}
+
 
 
 /* CONTACT */
 .ContactContainer{
   border: 1px solid black;
   margin: 5px;
-  height: 70vh;
+  height: 68vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +405,7 @@ img{
 .ResumeContainer{
   border: 1px solid black;
   margin: 5px;
-  height: 70vh;
+  height: 68vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +439,7 @@ img{
   display: flex;
   justify-content:  space-around;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 20px;
   color: var(--stormy)
 }
@@ -214,4 +447,12 @@ img{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.icons{
+  font-size: 40px;
+}
+@media screen and (max-width: 890px){
+  .git{
+    font-size: 30px;
+  }
 }

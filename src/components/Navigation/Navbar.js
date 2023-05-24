@@ -20,7 +20,7 @@ function Navbar() {
         <>
             <nav className="Navigation">
                 <h2> 
-                xJoshua Aguirrex
+                Joshua Aguirre
                 </h2>
                 <section className="NavLinks">
                     <p className="NavLink" onClick={()=> handleAbout()}>About</p>
